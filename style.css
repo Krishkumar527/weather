@@ -37,7 +37,7 @@ body {
 }
 
 .temp p {
-  font-size: 30rem;   /* 🔥 bigger temperature */
+  font-size: 1.6rem;   /* 🔥 bigger temperature */
   font-weight: 700;
   margin-bottom: 4rem; /* balanced spacing */
 }
