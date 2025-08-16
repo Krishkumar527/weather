@@ -8,7 +8,7 @@ const form = document.querySelector(".form");
 form.addEventListener("submit", searchForLocation);
 let target = "lucknow";
 const fetchResults = async (targetLocation) => {
-  let url = `http://api.weatherapi.com/v1/current.json?key=ec733117bb4444aba5151623252006&q=${targetLocation}&aqi=no`;
+  let url = `https://api.weatherapi.com/v1/current.json?key=ec733117bb4444aba5151623252006&q=${targetLocation}&aqi=no`;
   const res = await fetch(url);
   const data = await res.json();
   console.log(data);
