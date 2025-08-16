@@ -1,49 +1,103 @@
-*{
-    margin: 0%;
-    padding: 0;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-.container{
-    width:100%;
-    height:100vh;
-    background-color:maroon;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.weather_container{
-    color:white;
-    margin:1rem;
-}
-.temp{
-    font-size:4.5rem;
-}
-.time_location{
-    font-size: 2rem;
-}
-.condition{
-    margin: 0.5rem;
-    margin-left:0.2rem;
-}
-nav{
-    height: 100px;;
-}
-.search_area{
-    padding: 1rem 0;
-    outline:none;
-    border:none;
-    color:white;
-    background-color: transparent;
-    font-size: 1.1rem;
-    border-bottom: 2px solid white; 
-    width:98%;
-    
-}
-nav form button{
-    padding:0.5rem;
-    background-color: white;
-    margin-top: 1rem;
-    font-size:1.1rem;
-    outline:none;
-    border:none;
 
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #3b82f6, #9333ea);
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather_card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  width: 370px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.weather_info {
+  margin-bottom: 2.5rem; /* Equal spacing before search box */
+}
+
+.temp p {
+  font-size: 30rem;   /* 🔥 bigger temperature */
+  font-weight: 700;
+  margin-bottom: 4rem; /* balanced spacing */
+}
+
+.time_location p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.time_location span {
+  display: block;
+  font-size: 1rem;
+  opacity: 0.85;
+  margin-bottom: 0.5rem; /* equal gap before condition */
+}
+
+.condition p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+/* Search Box */
+nav form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem; /* equal spacing between input & button */
+}
+
+.search_area {
+  padding: 0.9rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  width: 100%;
+  font-size: 1.05rem;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  text-align: center;
+}
+
+.search_area::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+nav form button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  background: #fff;
+  color: #3b82f6;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+nav form button:hover {
+  background: #3b82f6;
+  color: #fff;
 }

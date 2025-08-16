@@ -10,27 +10,29 @@
 
 <body>
     <div class="container">
-        <div class="weather_container">
-            <div class="temp">
-                <p>20</p>
+        <div class="weather_card">
+            <div class="weather_info">
+                <div class="temp">
+                    <p>20°C</p>
+                </div>
+                <div class="time_location">
+                    <p>Delhi</p>
+                    <span>2022-09-26 Monday | 12:58</span>
+                </div>
+                <div class="condition">
+                    <p>Mist</p>
+                </div>
             </div>
-            <div class="time_location">
-                <p>Delhi</p>
-                <span>12:58-Monday 2022-09-26</span>
-            </div>
-            <div class="condition">
-                <!-- <p></p> -->
-                <p>Mist</p>
-            </div>
+
+            <nav>
+                <form class="form">
+                    <input type="text" placeholder="Enter city name..." class="search_area" />
+                    <button type="submit">Search</button>
+                </form>
+            </nav>
         </div>
-        <nav>
-            <form class="form">
-                <input type="text" placeholder="search for a location" class="search_area" />
-                <button type="submit">Search Button</button>
-            </form>
-        </nav>
     </div>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 
 </html>
